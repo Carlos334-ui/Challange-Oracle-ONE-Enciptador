@@ -204,26 +204,7 @@ header a {
 .informacionAlerta{
     color: red;
 }
-/*resolucion deskop menor a 1000x864*/
-@media only screen and (max-width: 1000px) and (max-height:864px) {
-    body {
-        width: 1000px;
-        height: 864px;
-    }
 
-    .contenedor_texto_desencriptado {
-        width: 194px;
-        height: 767px;
-        bottom: 0px;
-        top: 0px;
-    }
-
-    .contenedor_ingreso_texto_y_botones {
-        width: 679px;
-        height: 682px;
-    }
-
-}
 /*tablet*/
 @media only screen and (max-width:768px) and (max-height:1174px){
     html,body{
