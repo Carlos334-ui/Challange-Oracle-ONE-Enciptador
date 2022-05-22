@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Semi+Condensed:wght@100;600;700;900&family=Libre+Bodoni:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="shortcut icon" href="meta\favicon\favicon.png" type="image/x-icon">
+    <title>Challange One-Alura</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://app.aluracursos.com/"><img src="imagenes/Logo.svg" alt="logo"></a>
+    </header>
+    <section class="contenedor_texto_desencriptado">
+        <div class="contenedorImagen_Texto">
+            <div class="contenedor_imagen">
+                <img src="imagenes/Munheco.svg" alt="">
+            </div>
+            <div class="texto_info">
+                <p class="texto_1">Ningún mensaje fue encontrado</p>
+                <p class="texto_2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+        <textarea name="texto_desencriptado" class="salida_texto_des show" cols="30" rows="10"
+            onclick="this.select()"></textarea>
+        <div class="contenedorBotonCopiar show">
+            <button class="botonCopiar">
+                <p>Copiar</p>
+            </button>
+        </div>
+    </section>
+    <section class="contenedor_ingreso_texto_y_botones">
+        <textarea name="texto_a_desencriptar" class="ingreso_texto_des" cols="30" rows="10"
+            placeholder="Ingrese texto aquí" onclick="this.select()"></textarea>
+        <div class="informacion">
+            <div>
+                <img src="imagenes/bi_exclamation-circle-fill.svg" alt="signo_exclamacion">Solo letras
+                minúsculas y sin acentos
+            </div>
+        </div>
+        <div class="botones_des_enc">
+            <button class="encriptar">
+                <p>Encriptar</p>
+            </button>
+            <button class="desencriptar">
+                <p>Desencriptar</p>
+            </button>
+        </div>
+    </section>
+    <script src="js\main.js"></script>
+    <script src="js\getText.js"></script>
+    <script src="js\getTextOutPlace.js"></script>
+    <script src="js\searchForIllegalCharacters.js"></script>
+    <script src="js\encryptingText.js"></script>
+    <script src="js\decryptingText.js"></script>
+    <script src="js\setTextOutPlace.js"></script>
+
+</body>
+
+</html>
