@@ -160,7 +160,9 @@ header a {
     position: absolute;
     top: 84%;
     left: 20%;
+    font-size: x-large;
 }
+
 
 .botones_des_enc {
     position: absolute;
@@ -198,6 +200,9 @@ header a {
 }
 .desencriptar:hover{
     box-shadow: 11px 16px 2px black;
+}
+.informacionAlerta{
+    color: red;
 }
 /*resolucion deskop menor a 1000x864*/
 @media only screen and (max-width: 1000px) and (max-height:864px) {
@@ -270,54 +275,21 @@ header a {
         width: 60%;
         left: 20%;
     }
+    .botonCopiar p{
+        font-size: medium;
+    }
+    .informacion{
+        font-size: medium;
+        left: 16px;
+
+    }
     
     /*mobile*/
-    @media only screen and (max-width:375px) and (max-height:933px){
-        html,body{
-            min-width: 100%;
-            min-height: 100%;
-        }
-        header{
-            width: 100%;
-        }
-        .contenedor_texto_desencriptado{
-            width: 90%;
-            position: absolute;
-            left: 5%;
-            bottom: 36px;
-            right: 0;
-            height: 22%;
-        }
-        .contenedorImagen_Texto{
-            top: 23px;
-            height: 86%;
-        }
-        .contenedor_imagen{
-            display: none;
-        }
-        .texto_1 {
-            width: 100%;
-            padding: 2%;
-        }
-        .texto_2 {
-            padding: 4%;
-        }
-        .contenedor_ingreso_texto_y_botones {
-            width: 100%;
-            top: 10%;
-            height: 60%;
-        }
-        .informacion{
-            left: 16px;
-        }
+    @media only screen and (max-width:466px) and (max-height:933px){
+        
         .ingreso_texto_des{
             width: 95%;
             left: 10px;
-        }
-        .botones_des_enc {
-            width: 96%;
-            left: 13px;
-            gap: 9%;
         }
         .encriptar p{
             font-size: large;
@@ -325,15 +297,6 @@ header a {
         .desencriptar p{
             font-size: large;
         }
-        .contenedorBotonCopiar{
-            width: 100%;
-            height: 31%;
-            position: relative;
-        }
-        .botonCopiar{
-            height: 50%;
-            width: 60%;
-            left: 20%;
-        }
+        
     }
 }
